@@ -25,9 +25,9 @@
 
     "staging" : {
       "user": "node",
-      "host": "104.236.245.109",
-      "repo": "https://github.com/esalling23/RecycleMe.git",
-      "ref": "origin/staging",
+      "host": "199.94.80.19",
+      "repo": "https://github.com/engagementgamelab/RecycleMe.git",
+      "ref": "origin/master",
       "path": "/srv/RecycleMe",
       "pre-deploy-local" : "echo 'NPM linking recycle-me and restarting app.';",
       "post-deploy" : "npm i ; cd /srv/framework/source/ ; grunt compile --sites=recycle-me --env production ; NODE_ENV=production pm2 restart server.js -- recycle-me --env production"
